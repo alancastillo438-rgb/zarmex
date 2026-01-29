@@ -199,7 +199,7 @@ body {
 
 
 /* ================= MEDIA QUERIES ================= */
-@media(max-width:900px){
+@media(max-width:600px){
     .nav-links {
         display:none; flex-direction:column;
         background:#B7E0C6; position:absolute;
@@ -207,5 +207,5 @@ body {
     }
     .nav-links.active { display:flex; }
     .hamburger { display:flex; }
-    .hero-carousel { height:70vh; }
+    .hero-carousel { height:65vh; }
 }
