@@ -6,121 +6,335 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    line-height: 1.7;
+    background: linear-gradient(180deg, #f2f6f9, #ffffff);
     color: #333;
-    background:
-      linear-gradient(rgba(25,199,155,0.3), rgba(20,20,20,0.85)),
-      url("https://www.zarmexoficial.com/imagenes/1742439791_Captura%20de%20pantalla%202025-01-19%20134751.png");
-    background-size: cover;
-    background-attachment: fixed;
+    line-height: 1.8;
 }
 
-/* ===== NAVBAR ===== */
-.navbar-zarmex {
-    background: #B7E0C6;
-    padding: 15px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* TITULOS */
+h1, h2, h3, h4 {
+    color: #151616;
+    text-align: center;
 }
 
-.logo img {
-    max-height: 70px;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-}
-
-/* ===== DROPDOWN ===== */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: #1f6f73;
-    min-width: 180px;
-    border-radius: 6px;
-    top: 120%;
-}
-
-.dropdown-content a {
-    color: #fff;
-    padding: 12px;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* ===== BUSCADOR ===== */
-.search-box {
-    display: flex;
-    background: #fff;
-    border-radius: 20px;
-    padding: 4px 10px;
-}
-
-.search-box input {
-    border: none;
-    outline: none;
-}
-
-/* ===== HERO ===== */
+/* HERO */
 .hero {
-    padding: 120px 20px;
+    background: linear-gradient(135deg, #f0f1f159, #02644c59);
+    padding: 130px 20px;
 }
 
 .hero-box {
     max-width: 900px;
     margin: auto;
     background: rgba(255,255,255,0.15);
-    padding: 50px;
+    padding: 55px;
     border-radius: 25px;
     color: white;
     backdrop-filter: blur(6px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
 }
 
-/* ===== SECCIONES ===== */
+.hero-box h1 {
+    font-size: 3rem;
+}
+
+.hero-box p {
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+
+/* SECCIONES */
 .section {
     max-width: 1100px;
     margin: 80px auto;
     padding: 60px 25px;
     background: white;
     border-radius: 30px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
 }
 
-/* ===== FOOTER ===== */
-.footer-zarmex {
-    background: #02644c;
+/* IMAGENES */
+.image-section img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* TEXTO */
+.section p {
+    max-width: 950px;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+/* MISIÓN Y VISIÓN */
+.purpose {
+    background: linear-gradient(135deg, #B7E0C6, #B7E0C6);
     color: white;
-    padding: 40px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    background: rgb(245, 244, 242);
+    color: #333;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(250, 249, 249, 0.986);
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* VALORES */
+.values {
+    background: #B7E0C6
+;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-card {
+    background: rgb(243, 243, 242);
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    transition: all .3s ease;
+}
+
+.value-card:hover {
+    transform: scale(1.06);
+}
+
+.value-card h4 {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-box h1 {
+        font-size: 2.2rem;
+    }
+}
+body {
+    background:
+      linear-gradient(
+        rgba(25, 199, 155, 0.308),
+        rgba(20, 20, 20, 0.85)
+      ),
+      url("https://www.zarmexoficial.com/imagenes/1742439791_Captura%20de%20pantalla%202025-01-19%20134751.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+
+
+}
+.footer-zarmex {
+    background: #02644c59;
+    color: #0a0a0a;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .footer-contenido {
+    max-width: 1100px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #0c0c0c;
+}
+
+.footer-col p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+}
+
+/* REDES */
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+}
+
+
 .redes-sociales a {
-    margin-right: 15px;
-    color: white;
+    width: 45px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 22px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+
+.redes-sociales .facebook {
+    background: #1877F2;
+}
+
+.redes-sociales .facebook:hover {
+    background: #145ddb;
+    transform: scale(1.1);
+}
+
+
+.redes-sociales .instagram {
+    background: linear-gradient(
+        45deg,
+        #f58529,
+        #dd2a7b,
+        #8134af,
+        #515bd4
+    );
+}
+
+.redes-sociales .instagram:hover {
+    transform: scale(1.15);
+    filter: brightness(1.1);
+}
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #B7E0C6, #B7E0C6);
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.logo img {
+    max-height: 75px;
+}
+
+nav a {
+    color: #070707;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #c9fff2;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+/* ===== DROPDOWN SERVICIOS ===== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Contenido oculto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1f6f73;
+    min-width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    z-index: 999;
+}
+
+/* Links internos */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+/* Hover interno */
+.dropdown-content a:hover {
+    background-color: #159a9c;
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover del botón */
+.dropdown:hover .dropdown-btn {
+    color: #ffd700;
+}
+
+/* ===== BUSCADOR NAV ===== */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 4px 10px;
+    margin-left: 15px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 6px 8px;
+    font-size: 14px;
+    width: 150px;
+    background: transparent;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    color: #1f6f73;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    color: #159a9c;
 }
