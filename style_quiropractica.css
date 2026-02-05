@@ -1,0 +1,265 @@
+/* ================= RESET ================= */
+* { margin:0; padding:0; box-sizing:border-box; }
+html { font-size:16px; scroll-behavior:smooth; }
+
+body {
+    font-family:'Segoe UI', Tahoma, sans-serif;
+    color:#333;
+    padding-top:130px;
+    background: linear-gradient(rgba(25,199,155,0.35), rgba(20,20,20,0.85)),
+        url("https://www.zarmexoficial.com/imagenes/1742439791_Captura%20de%20pantalla%202025-01-19%20134751.png");
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+/* ================= NAVBAR ================= */
+.navbar-zarmex {
+    background:#B7E0C6;
+    padding:20px 50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+.logo img { height:65px; }
+
+.nav-links {
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.nav-links a {
+    text-decoration:none;
+    color:#070707;
+    font-weight:500;
+    position:relative;
+}
+
+.nav-links a::after {
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    background:#02644c;
+    left:0;
+    bottom:-6px;
+    transition:0.3s;
+}
+
+.nav-links a:hover::after { width:100%; }
+
+/* BUSCADOR */
+.search-box {
+    display:flex;
+    background:white;
+    border-radius:25px;
+    padding:6px 12px;
+}
+
+.search-box input {
+    border:none;
+    outline:none;
+    width:160px;
+}
+
+.search-box button {
+    background:none;
+    border:none;
+    cursor:pointer;
+    color:#02644c;
+}
+
+/* DROPDOWN */
+.dropdown { position:relative; }
+
+.dropdown-content {
+    display:none;
+    position:absolute;
+    top:120%;
+    left:0;
+    background:#02644c;
+    min-width:180px;
+    border-radius:8px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    z-index:100;
+}
+
+.dropdown-content a {
+    display:block;
+    padding:12px 16px;
+    color:white;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.dropdown:hover .dropdown-content { display:block; }
+
+/* ================= PRODUCTOS ================= */
+.productos-destacados {
+    background:rgba(255, 255, 255, 0.349);
+    max-width:1100px;
+    margin:100px auto;
+    padding:70px 60px;
+    border-radius:35px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.15);
+}
+
+.productos-destacados h2 {
+    text-align:center;
+    font-size:30px;
+    color:#02644c;
+    margin-bottom:60px;
+}
+
+.productos-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:45px;
+}
+
+.producto-card {
+    background:white;
+    border-radius:28px;
+    padding:25px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
+    transition:transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.producto-card:hover {
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.18);
+}
+
+.producto-img {
+    background:#eef5f1;
+    border-radius:22px;
+    padding:20px;
+    height:400px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.producto-img img {
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transition:transform 0.35s ease;
+}
+
+.producto-card:hover .producto-img img {
+    transform:scale(1.08);
+}
+
+.producto-card h3 {
+    margin-top:25px;
+    font-size:18px;
+    color:#02644c;
+}
+
+.producto-card p {
+    margin-top:12px;
+    font-size:14.5px;
+    line-height:1.7;
+    color:#555;
+}
+
+/* ================= FOOTER ================= */
+.footer-zarmex {
+    background:#02644c;
+    color:white;
+    padding:50px 20px 20px;
+    text-align:center;
+}
+
+.footer-contenido {
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.footer-col h4 {
+    margin-bottom:15px;
+    font-size:1.2rem;
+}
+
+.footer-col p {
+    margin:6px 0;
+    font-size:0.95rem;
+}
+
+.redes-sociales {
+    display:flex;
+    gap:16px;
+}
+
+.redes-sociales a {
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:22px;
+    text-decoration:none;
+    transition:transform 0.3s ease;
+}
+
+.redes-sociales a.facebook { background:#1877F2; }
+
+.redes-sociales a.instagram {
+    background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285AEB 90%);
+}
+
+.redes-sociales a.tiktok { background:#000; }
+
+.redes-sociales a:hover { transform:scale(1.15); }
+
+/* ================= RESPONSIVE ================= */
+.hamburger {
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+    gap:5px;
+}
+
+.hamburger span {
+    width:25px;
+    height:3px;
+    background:#02644c;
+    border-radius:2px;
+}
+
+@media(max-width:600px){
+    .nav-links {
+        display:none;
+        flex-direction:column;
+        background:#B7E0C6;
+        position:absolute;
+        top:100%;
+        right:0;
+        width:200px;
+        padding:20px;
+    }
+    .nav-links.active { display:flex; }
+    .hamburger { display:flex; }
+}

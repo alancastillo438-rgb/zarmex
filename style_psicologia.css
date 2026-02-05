@@ -1,0 +1,68 @@
+/* ================= RESET ================= */
+* { margin:0; padding:0; box-sizing:border-box; }
+html { font-size:16px; scroll-behavior:smooth; }
+
+body {
+    font-family:'Segoe UI', Tahoma, sans-serif;
+    color:#fff;
+    padding-top:130px;
+    background: linear-gradient(rgba(25,199,155,0.35), rgba(20,20,20,0.85)),
+        url("https://www.zarmexoficial.com/imagenes/1742439791_Captura%20de%20pantalla%202025-01-19%20134751.png");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    text-align:center;
+}
+
+/* ================= HERO MANTENIMIENTO ================= */
+.maintenance-box {
+    background: rgba(0,0,0,0.55);
+    padding: 60px 40px;
+    border-radius: 25px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+.maintenance-box h1 {
+    font-size: 3rem;
+    color:#f0f1f1;
+    margin-bottom: 20px;
+}
+
+.maintenance-box p {
+    font-size: 1.2rem;
+    color:#d1f0e3;
+    margin-bottom: 30px;
+}
+
+/* Botón volver */
+.maintenance-box a {
+    display:inline-block;
+    text-decoration:none;
+    padding:12px 30px;
+    background:#02644c;
+    color:white;
+    font-weight:600;
+    border-radius:25px;
+    transition: all 0.3s ease;
+}
+.maintenance-box a:hover {
+    background:#02b386;
+    transform:scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:600px){
+    .maintenance-box {
+        padding:40px 20px;
+    }
+    .maintenance-box h1 {
+        font-size:2rem;
+    }
+    .maintenance-box p {
+        font-size:1rem;
+    }
+}
