@@ -559,3 +559,14 @@ body {
     margin-left: 30px;
   }
 }
+/* ===== AJUSTES SIN BORRAR NADA ===== */
+
+html, body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-attachment: scroll;
+  }
+}
