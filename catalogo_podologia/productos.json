@@ -1,0 +1,30 @@
+[
+{
+  "codigo": "ZAR-PDA-030",
+  "categoria": "Podología",
+  "imagen": "https://zarmexoficial.com/images/productos/1741914747.png",
+  "descripcion": "Equipo de podología con placa base de 1/4, motor de 4000 Nw a 110 V, altura ajustable de 55 a 70 cm, charola de residuos de acero inoxidable, lámpara con brazo articulado, cojín circular, piecera extensible, respaldo reclinable manual, control al pie y acabado en vinil automotriz con pintura electrostática.",
+  "precio": 24400
+},
+{
+  "codigo": "ZAR-PDA-031",
+  "categoria": "Podología",
+  "imagen": "https://zarmexoficial.com/images/productos/1741914788.png",
+  "descripcion": "Mesa de podología eléctrica tipo Trendelemburg con inclinación hasta 20°, motor de 4000 Nw, altura ajustable de 55 a 75 cm, respaldo reclinable eléctrico, control de pie, charola de acero inoxidable, lámpara articulada, piecera extensible, banquillo importado y mueble auxiliar.",
+  "precio": 32900
+},
+{
+  "codigo": "ZAR-PDA-032",
+  "categoria": "Podología",
+  "imagen": "https://zarmexoficial.com/images/productos/1741914827.png",
+  "descripcion": "Equipo de podología con motor de 4000 Nw, altura ajustable de 55 a 75 cm, charola de acero inoxidable, lámpara con brazo reforzado, cojín circular, piecera extensible, respaldo reclinable manual, brazo auxiliar, sistema de baja presión, jeringas triples, barómetro, control al pie y acabado en vinil automotriz.",
+  "precio": 31950
+},
+{
+  "codigo": "ZAR-PDA-033",
+  "categoria": "Podología",
+  "imagen": "https://zarmexoficial.com/images/productos/Tds1sqo8idlS4KlBaNDqSRc9yflPZCl9XxOU7tyt.png",
+  "descripcion": "Equipo de podología con motor de 4000 Nw, altura ajustable de 55 a 75 cm, charola de acero inoxidable ajustable, lámpara con brazo articulado, cojín circular, respaldo reclinable, piecera extensible, banquillo importado, mueble auxiliar y control al pie.",
+  "precio": 26700
+}
+]

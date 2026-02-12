@@ -1,0 +1,149 @@
+[
+{
+    "codigo": "ZAR-CQP-001",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-001/ZARQ001.png",
+    "descripcion": "Camilla profesional con vinil resistente y acolchonamiento firme.",
+    "precio": 4000
+  },
+  {
+    "codigo": "ZAR-CQP-002",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-002/ZARQ002.png",
+    "descripcion": "Camilla de herrería reforzada para uso continuo.",
+    "precio": 4500
+  },
+  {
+    "codigo": "ZAR-CQP-003",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-003/ZARQ003.png",
+    "descripcion": "Silla de apoyo con respaldo ajustable.",
+    "precio": 2500
+  },
+  {
+    "codigo": "ZAR-CQP-004",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-004/ZARQ004.png",
+    "descripcion": "Camilla portátil ligera para consulta.",
+    "precio": 3800
+  },
+  {
+    "codigo": "ZAR-CQP-005",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-005/ZARQ005.png",
+    "descripcion": "Mesa con drops cervical, lumbar y pélvico.",
+    "precio": 21000
+  },
+  {
+    "codigo": "ZAR-CQP-006",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-006/ZARQ006.png",
+    "descripcion": "Mesa de madera con diseño profesional.",
+    "precio": 12000
+  },
+  {
+    "codigo": "ZAR-CQP-007",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-007/ZARQ007.png",
+    "descripcion": "Mesa con sistema de drops y piecera extensible.",
+    "precio": 24500
+  },
+  {
+    "codigo": "ZAR-CQP-008",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-008/ZARQ008.png",
+    "descripcion": "Mesa fija de consulta quiropráctica.",
+    "precio": 9500
+  },
+  {
+    "codigo": "ZAR-CQP-009",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-009/ZARQ009.png",
+    "descripcion": "Mesa con diseño anatómico profesional.",
+    "precio": 13800
+  },
+  {
+    "codigo": "ZAR-CQP-010",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-010/ZARQ010.png",
+    "descripcion": "Mesa reforzada para clínicas especializadas.",
+    "precio": 18000
+  },
+  {
+    "codigo": "ZAR-CQP-011",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-011/ZARQ011.png",
+    "descripcion": "Mesa con doble motor eléctrico y ajustes automáticos.",
+    "precio": 37500
+  },
+  {
+    "codigo": "ZAR-CQP-012",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-012/ZARQ012.png",
+    "descripcion": "Mesa eléctrica avanzada con tracción cervical.",
+    "precio": 43000
+  },
+  {
+    "codigo": "ZAR-CQP-013",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-013/ZARQ013.png",
+    "descripcion": "Mesa ajustable multiposición.",
+    "precio": 19500
+  },
+  {
+    "codigo": "ZAR-CQP-014",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-014/ZARQ014.png",
+    "descripcion": "Mesa profesional con soporte lumbar.",
+    "precio": 22000
+  },
+  {
+    "codigo": "ZAR-CQP-015",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-015/ZARQ015.png",
+    "descripcion": "Mesa clínica con ajuste hidráulico.",
+    "precio": 28000
+  },
+  {
+    "codigo": "ZAR-CQP-016",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-016/ZARQ016.png",
+    "descripcion": "Mesa de consulta reforzada.",
+    "precio": 15500
+  },
+  {
+    "codigo": "ZAR-CQP-017",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-017/ZARQ017.png",
+    "descripcion": "Mesa con cabezal ajustable.",
+    "precio": 17000
+  },
+  {
+    "codigo": "ZAR-CQP-018",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-018/ZARQ018.png",
+    "descripcion": "Mesa clínica con estructura premium.",
+    "precio": 32000
+  },
+  {
+    "codigo": "ZAR-CQP-019",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-019/ZARQ019.png",
+    "descripcion": "Mesa eléctrica de alto rendimiento.",
+    "precio": 39000
+  },
+  {
+    "codigo": "ZAR-CQP-020",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-020/ZARQ020.png",
+    "descripcion": "Mesa de tracción cervical y lumbar motorizada.",
+    "precio": 100000
+  },
+  {
+    "codigo": "ZAR-CQP-021",
+    "categoria": "Quiropráctica",
+    "imagen": "https://www.zarmexoficial.com/images/productos/ZAR-CQP-021/ZARQ021.png",
+    "descripcion": "Mesa clínica con ajuste manual.",
+    "precio": 14800
+  }
+]

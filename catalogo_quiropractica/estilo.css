@@ -1,0 +1,561 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #333;
+  padding-top: 130px;
+  background: linear-gradient(rgba(25,199,155,0.35), rgba(20,20,20,0.85)),
+    url("https://www.zarmexoficial.com/imagenes/1742439791_Captura%20de%20pantalla%202025-01-19%20134751.png");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ================= NAVBAR ================= */
+.navbar-zarmex {
+  background: #B7E0C6;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.logo img {
+  height: 65px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #070707;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #02644c;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ================= BUSCADOR ================= */
+.search-box {
+  display: flex;
+  background: white;
+  border-radius: 25px;
+  padding: 6px 12px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 160px;
+}
+
+.search-box button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #02644c;
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #02644c;
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  z-index: 100;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ================= GRID PRODUCTOS ================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ================= TARJETAS - DARK PREMIUM ================= */
+.card {
+  background: #0f1a1c;
+  border-radius: 28px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #e2f0ed;
+  box-shadow: 0 20px 35px -10px rgba(0,0,0,0.6);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #2a4042;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 45px -10px #000000cc;
+  border-color: #4f9e94;
+}
+
+.card .img-container {
+  background: #1a2a2c;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #2e494b;
+  height: 250px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  filter: brightness(0.95);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.card-content {
+  padding: 25px 25px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.categoria {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #b7e0c6;
+  font-weight: 700;
+  background: #1e3537;
+  padding: 5px 12px;
+  border-radius: 50px;
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid #3e6b6b;
+}
+
+.card h3 {
+  color: #e6fffa;
+  font-size: 1.3rem;
+  margin: 5px 0 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #b0d4cf;
+  margin: 0 0 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: box;
+  box-orient: vertical;
+  line-clamp: 3;
+}
+
+.precio {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #a3f0e0;
+  margin: 5px 0 0;
+  text-shadow: 0 0 8px #02644c80;
+}
+
+.beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px 0 15px;
+  font-size: 0.85rem;
+  color: #cce5e0;
+  background: #16292b;
+  padding: 15px;
+  border-radius: 16px;
+  border: 1px solid #2f5552;
+}
+
+.beneficios span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-card {
+  background: #1e4a47;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  margin-top: 5px;
+  border: 1px solid #4f9e94;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.btn-card:hover {
+  background: #2f6b6b;
+  border-color: #a3f0e0;
+  transform: scale(0.98);
+  box-shadow: 0 0 15px #2f6b6b80;
+}
+
+.card .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  color: white;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ================= DETALLE PRODUCTO ================= */
+.producto-detalle {
+  background: #0f1a1c;
+  margin: 50px auto;
+  padding: 40px;
+  max-width: 1000px;
+  border-radius: 20px;
+  display: flex;
+  gap: 40px;
+  box-shadow: 0 20px 35px -10px rgba(0,0,0,0.6);
+  border: 1px solid #2a4042;
+  position: relative;
+}
+.producto-info {
+  color: #e2f0ed;
+}
+
+.producto-info {
+  color: #333;
+  flex: 1;
+}
+
+.producto-info h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.producto-info p {
+  color: #4f6763;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.producto-info strong {
+  color: #02644c;
+  font-size: 2rem;
+  font-weight: 800;
+  display: block;
+  margin-top: 20px;
+}
+
+/* ================= ZOOM - CORREGIDO ================= */
+.zoom-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+}
+
+.zoom-container {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  background: #7fcac3;
+  cursor: none;
+}
+
+.zoom-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.lupa {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  pointer-events: none;
+  display: none;
+}
+
+.zoom-ventana {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 420px;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background: white;
+}
+
+.zoom-ventana img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Badge en producto */
+.producto-detalle .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  color: white;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ================= BOTÓN VOLVER ================= */
+.btn-volver {
+  display: inline-block;
+  margin: 30px 0 0 50px;
+  padding: 12px 25px;
+  background: #02644c;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  border: 1px solid #4f9e94;
+}
+
+.btn-volver:hover {
+  background: #014d3a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px #02644c80;
+}
+
+/* ================= MODAL CELULAR ================= */
+.modal-img {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+}
+
+.modal-img img {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+.footer-zarmex {
+  background: #02644c;
+  color: white;
+  padding: 50px 20px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-contenido {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  text-align: left;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-col p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 16px;
+}
+
+.redes-sociales a {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociales a.facebook { background: #1877F2; }
+.redes-sociales a.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.redes-sociales a.tiktok { background: #000000; }
+.redes-sociales a:hover { transform: scale(1.15); }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.15);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .producto-detalle {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .zoom-wrapper {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .zoom-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+  
+  .zoom-ventana {
+    display: none !important;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    padding: 30px;
+  }
+  
+  .btn-volver {
+    margin-left: 30px;
+  }
+}

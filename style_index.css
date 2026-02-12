@@ -1,0 +1,353 @@
+/* ================= RESET ================= */
+* { margin:0; padding:0; box-sizing:border-box; }
+html { font-size:16px; scroll-behavior:smooth; }
+body {
+    font-family:'Segoe UI', Tahoma, sans-serif;
+    color:#333;
+    padding-top:130px;
+    background: linear-gradient(rgba(25,199,155,0.35), rgba(20,20,20,0.85)),
+        url("https://www.zarmexoficial.com/imagenes/1742439791_Captura%20de%20pantalla%202025-01-19%20134751.png");
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+/* ================= NAVBAR ================= */
+.navbar-zarmex {
+    background:#B7E0C6;
+    padding:20px 50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+.logo img { height:65px; }
+.nav-links { display:flex; align-items:center; gap:25px; }
+.nav-links a { text-decoration:none; color:#070707; font-weight:500; position:relative; }
+.nav-links a::after {
+    content:''; position:absolute; width:0; height:2px; background:#02644c; left:0; bottom:-6px; transition:0.3s;
+}
+.nav-links a:hover::after { width:100%; }
+
+/* BUSCADOR */
+.search-box { display:flex; background:white; border-radius:25px; padding:6px 12px; }
+.search-box input { border:none; outline:none; width:160px; }
+.search-box button { background:none; border:none; cursor:pointer; color:#02644c; }
+
+/* DROPDOWN */
+.dropdown { position:relative; }
+.dropdown-content {
+    display:none; position:absolute; top:120%; left:0;
+    background:#02644c; min-width:180px; border-radius:8px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25); z-index:100;
+}
+.dropdown-content a { display:block; padding:12px 16px; color:white; }
+.dropdown-content a:hover { background: rgba(255,255,255,0.15); }
+.dropdown:hover .dropdown-content { display:block; }
+
+/* HAMBURGER */
+.hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; }
+.hamburger span { width:25px; height:3px; background:#02644c; border-radius:2px; }
+
+/* ================= HERO CAROUSEL ================= */
+.hero-carousel { position:relative; height:90vh; overflow:hidden; }
+.carousel-slide {
+    position:absolute;
+    inset:0;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity:0;
+    transform:scale(1.1);
+    transition:opacity 1.2s ease-in-out, transform 6s ease;
+}
+
+
+.carousel-slide.active {
+    opacity:1;
+    transform:scale(1);
+}
+
+
+/* ===== FLECHAS AGREGADAS ===== */
+.carousel-arrow {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,0.55);
+    border:none;
+    color:white;
+    font-size:36px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    cursor:pointer;
+    z-index:50;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:background 0.3s ease, transform 0.2s ease;
+}
+.carousel-arrow:hover {
+    background:rgba(2,100,76,0.9);
+    transform:translateY(-50%) scale(1.1);
+}
+.prev { left:25px; }
+.next { right:25px; }
+
+/* DOTS */
+.carousel-dots {
+    position:absolute;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+    z-index:10;
+}
+.carousel-dots span {
+    width:12px;
+    height:12px;
+    background:rgba(255,255,255,0.6);
+    border-radius:50%;
+    cursor:pointer;
+}
+.carousel-dots span.active { background:#02644c; }
+
+/* ================= PRODUCTOS ================= */
+.productos-destacados {
+    background:white; max-width:1100px; margin:100px auto;
+    padding:70px 60px; border-radius:35px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.15);
+}
+.productos-destacados h2 {
+    text-align:center; font-size:30px;
+    color:#02644c; margin-bottom:60px;
+}
+.productos-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:45px;
+}
+.producto-card {
+    background:white; border-radius:28px;
+    padding:25px; box-shadow:0 12px 30px rgba(0,0,0,0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.producto-card:hover {
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.18);
+}
+.producto-img {
+    background:#eef5f1; border-radius:22px;
+    padding:25px; display:flex; justify-content:center;
+}
+.producto-img img { max-width:100%; border-radius:18px; }
+.producto-card h3 { margin-top:25px; font-size:18px; color:#02644c; }
+.producto-card p { margin-top:12px; font-size:14.5px; line-height:1.7; color:#555; }
+
+/* ================= FOOTER ================= */
+.footer-zarmex {
+    background:#02644c; color:white;
+    padding:50px 20px 20px; text-align:center;
+}
+.footer-contenido {
+    max-width:1100px; margin:auto;
+    display:flex; justify-content:space-between;
+    flex-wrap:wrap; gap:40px;
+}
+.footer-col h4 { margin-bottom:15px; font-size:1.2rem; }
+.footer-col p { margin:6px 0; font-size:0.95rem; }
+
+.redes-sociales {
+    display:flex;
+    gap:16px;
+}
+
+/* Estilo base */
+.redes-sociales a {
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:22px;
+    text-decoration:none;
+    transition: transform 0.3s ease;
+}
+
+/* Facebook */
+.redes-sociales a.facebook {
+    background:#1877F2;
+}
+
+/* Instagram (gradiente oficial) */
+.redes-sociales a.instagram {
+    background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285AEB 90%);
+}
+
+/* TikTok */
+.redes-sociales a.tiktok {
+    background:#000000;
+}
+
+/* Hover */
+.redes-sociales a:hover {
+    transform:scale(1.15);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.15);
+}
+/* ================= CATALOGO PRODUCTOS ================= */
+.productos-catalogo {
+    background:#f8faf9;
+    max-width:1200px;
+    margin:120px auto;
+    padding:80px 60px;
+    border-radius:35px;
+}
+
+.productos-catalogo h2 {
+    text-align:center;
+    font-size:32px;
+    color:#02644c;
+    margin-bottom:70px;
+}
+
+.catalogo-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:45px;
+}
+
+.catalogo-card {
+    background:white;
+    border-radius:30px;
+    padding:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.catalogo-card:hover {
+    transform:translateY(-12px);
+    box-shadow:0 25px 50px rgba(0,0,0,0.2);
+}
+
+.catalogo-img {
+    background:#eaf3ef;
+    border-radius:22px;
+    padding:25px;
+    display:flex;
+    justify-content:center;
+}
+
+.catalogo-img img {
+    max-width:100%;
+    border-radius:18px;
+}
+
+.catalogo-card h3 {
+    margin-top:25px;
+    font-size:20px;
+    color:#02644c;
+}
+
+.catalogo-card p {
+    margin:15px 0;
+    font-size:15px;
+    line-height:1.7;
+    color:#555;
+}
+
+.precio {
+    display:block;
+    font-size:20px;
+    font-weight:700;
+    color:#02644c;
+    margin:20px 0;
+}
+
+.catalogo-botones {
+    display:flex;
+    gap:15px;
+}
+
+.btn-detalles {
+    flex:1;
+    text-align:center;
+    padding:12px 0;
+    border:2px solid #02644c;
+    color:#02644c;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition: all 0.3s ease;
+}
+
+.btn-detalles:hover {
+    background:#02644c;
+    color:white;
+}
+
+.btn-cotizar {
+    flex:1;
+    text-align:center;
+    padding:12px 0;
+    background:#25D366;
+    color:white;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    transition: transform 0.3s ease;
+}
+
+.btn-cotizar:hover {
+    transform:scale(1.05);
+}
+
+/* ================= MEDIA QUERIES ================= */
+@media(max-width:600px){
+    .nav-links {
+        display:none; flex-direction:column;
+        background:#B7E0C6; position:absolute;
+        top:100%; right:0; width:200px; padding:20px;
+    }
+    .nav-links.active { display:flex; }
+    .hamburger { display:flex; }
+    .hero-carousel { height:65vh; }
+}

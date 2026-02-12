@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del Producto | Zarmex</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar-zarmex">
+    <div class="logo">
+        <a href="../index.html">
+            <img src="https://www.zarmexoficial.com/imagenes/1742439791_Captura%20de%20pantalla%202025-01-19%20134751.png" alt="Zarmex Logo">
+        </a>
+    </div>
+
+    <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-btn">Productos ▾</a>
+            <div class="dropdown-content">
+                <a href="../catalogo_quiropractica/catalogo.html">Quiropráctica</a>
+                <a href="../catalogo_fisioterapia/catalogo.html">Fisioterapia</a>
+                <a href="../catalogo_ginecologia/catalogo.html">Ginecología</a>
+                <a href="../catalogo_otorrinolaringologia/catalogo.html">Otorrinolaringología</a>
+                <a href="../catalogo_podologia/catalogo.html">Podología</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdown-btn">Servicios ▾</a>
+            <div class="dropdown-content">
+                <a href="../mantenimiento.html">Mantenimiento</a>
+                <a href="../reparacion.html">Reparación</a>
+            </div>
+        </div>
+
+        <a href="../nosotros.html">Nosotros</a>
+
+        <form class="search-box">
+            <input type="text" placeholder="Buscar productos...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <a href="../sesion.html">Inicio Sesión</a>
+    </nav>
+</header>
+
+<!-- ================= CONTENIDO PRINCIPAL ================= -->
+<main>
+
+  <!-- Botón volver -->
+  <a href="catalogo.html" class="btn-volver">
+    ← Volver a Fisioterapia
+  </a>
+
+  <!-- Detalle Producto -->
+  <section class="producto-detalle">
+
+    <!-- ZOOM -->
+    <div class="zoom-wrapper">
+      <div class="zoom-container">
+        <img id="imagen" class="zoom-img" alt="Producto Zarmex">
+        <div class="lupa"></div>
+        <div class="badge" id="badge"></div>
+      </div>
+
+      <div class="zoom-ventana">
+        <img id="zoom-ventana-img" alt="Zoom del producto">
+      </div>
+    </div>
+
+    <!-- Información -->
+    <div class="producto-info">
+      <h1 id="nombre"></h1>
+      <p id="descripcion"></p>
+      <strong id="precio"></strong>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- ================= MODAL MÓVIL ================= -->
+<div class="modal-img" id="modalImg">
+  <span class="cerrar">&times;</span>
+  <img id="modalImagen" alt="Producto ampliado">
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-zarmex">
+  <div class="footer-contenido">
+    <div class="footer-col">
+      <h4>Contáctanos</h4>
+      <p><strong>Teléfono:</strong> +52 55 8136 6555</p>
+      <p><strong>Email:</strong> contacto.zarmex@gmail.com</p>
+      <p><strong>Email:</strong> zarmex.mexico@gmail.com</p>
+      <p><strong>Soporte:</strong> soporte.zarmex@gmail.com</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/sillonesdepodologia.2007/?locale=es_LA" target="_blank" class="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/zarmex_oficialmx" target="_blank" class="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@zarmex_oficial" target="_blank" class="tiktok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <h3>ZARMEX</h3>
+    <p>© 2026 Zarmex. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/525581366555?text=Hola%20quiero%20información%20sobre%20sus%20productos"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Scripts -->
+<script src="producto.js"></script>
+
+</body>
+</html>

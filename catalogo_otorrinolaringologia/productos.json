@@ -1,0 +1,37 @@
+[
+{
+  "codigo": "ZAR-OTN-022",
+  "categoria": "Otorrinolaringología",
+  "imagen": "https://zarmexoficial.com/images/productos/1741914355.png",
+  "descripcion": "Silla-mesa ajustable con respaldo reclinable manual, brazo abatible y giro de 340°. Altura motorizada de 55 a 75 cm, cabezal desmontable y estructura robusta en placa de 1/4 con vinil automotriz y acolchonado de alta densidad.",
+  "precio": 27000
+},
+{
+  "codigo": "ZAR-OTN-023",
+  "categoria": "Otorrinolaringología",
+  "imagen": "https://zarmexoficial.com/images/productos/1741914396.png",
+  "descripcion": "Silla-mesa eléctrica con respaldo y piecera reclinables en movimiento conjunto, giro de 340°, brazo abatible, cabezal desmontable y altura ajustable de 55 a 75 cm. Diseño funcional para atención profesional.",
+  "precio": 30500
+},
+{
+  "codigo": "ZAR-OTN-024",
+  "categoria": "Otorrinolaringología",
+  "imagen": "https://zarmexoficial.com/images/productos/ZAR-OTN-024/principal.jpg",
+  "descripcion": "Silla-mesa eléctrica con respaldo y piecera motorizados de forma independiente, giro de 340°, brazo abatible y cabezal desmontable. Altura ajustable y estructura reforzada con acabado electrostático.",
+  "precio": 35000
+},
+{
+  "codigo": "ZAR-OTN-025",
+  "categoria": "Otorrinolaringología",
+  "imagen": "https://zarmexoficial.com/images/productos/1741914496.png",
+  "descripcion": "Mueble de aspiración clínica con motor de 1HP, cinco cajones con seguros, contenedores desmontables, manguera extendible y llantas con freno. Ideal para espacios clínicos exigentes.",
+  "precio": 14000
+},
+{
+  "codigo": "ZAR-OTN-026",
+  "categoria": "Otorrinolaringología",
+  "imagen": "https://zarmexoficial.com/images/productos/1741914555.png",
+  "descripcion": "Mueble clínico multifuncional con sistema de aspiración y aspersión integrados, motores independientes, cajones con seguro y estructura reforzada. Solución completa para práctica clínica.",
+  "precio": 21000
+}
+]

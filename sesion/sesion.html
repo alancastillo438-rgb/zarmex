@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión admin</title>
+
+    <link rel="stylesheet" href="style_sesion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar-zarmex">
+    <div class="logo">
+        <img src="https://www.zarmexoficial.com/imagenes/1742439791_Captura%20de%20pantalla%202025-01-19%20134751.png" alt="Zarmex Logo">
+    </div>
+    <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <div class="dropdown">
+            <a href="#" class="dropdown-btn">Productos ▾</a>
+            <div class="dropdown-content">
+                <a href="catalogo_quiropractica/catalogo.html">Quiropráctica</a>
+                <a href="catalogo_fisioterapia/catalogo.html">Fisioterapia</a>
+                <a href="catalogo_ginecologia/catalogo.html">Ginecología</a>
+                <a href="catalogo_otorrinolaringologia/catalogo.html">Otorrinolaringología</a>
+                <a href="catalogo_podologia/catalogo.html">Podología</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-btn">Servicios ▾</a>
+            <div class="dropdown-content">
+                <a href="mantenimiento/mantenimiento.html">Mantenimiento</a>
+                <a href="mantenimiento/reparacion.html">Reparación</a>
+            </div>
+        </div>
+        <a href="nosotros/nosotros.html">Nosotros</a>
+        <form class="search-box">
+            <input type="text" placeholder="Buscar productos...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <a href="sesion/sesion.html">Inicio Sesion</a>
+    </nav>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+</header>
+
+<section class="login-hero">
+    <form class="login-box" action="sesion.php" method="POST">
+    <img src="https://cdn-icons-gif.flaticon.com/10086/10086940.gif" 
+    alt="Zarmex Logo" class="login-logo">
+        <h2>Iniciar Sesión</h2>
+
+        <div class="inputBox">
+            <span class="icon"><i class="fa fa-user"></i></span>
+            <input type="text" name="username" required>
+            <label>Usuario</label>
+        </div>
+
+        <div class="inputBox">
+            <span class="icon"><i class="fa fa-lock"></i></span>
+            <input type="password" name="password" required>
+            <label>Contraseña</label>
+        </div>
+
+        <input type="submit" value="Iniciar Sesión">
+
+        <p class="register-link">
+            ¿No tienes una cuenta?
+            <a href="registro.html">Regístrate aquí</a>
+        </p>
+       <center><p class="trabajador-link">
+            Eres trabajador
+            <a href="login_trabajador.php">inicia sesion aqui </a>
+        </p>
+    </center>
+        </form>
+</section>
+
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+[
+{
+  "codigo": "ZAR-FTA-027",
+  "categoria": "Fisioterapia",
+  "imagen": "https://zarmexoficial.com/images/productos/1741914608.png",
+  "descripcion": "Camilla amplia y resistente ideal para exploración o tratamiento, con estructura de madera de pino, vinil automotriz y espuma de alta densidad.",
+  "precio": 12000
+},
+{
+  "codigo": "ZAR-FTA-028",
+  "categoria": "Fisioterapia",
+  "imagen": "https://zarmexoficial.com/images/productos/1741914666.png",
+  "descripcion": "Mesa de exploración amplia y cómoda, fabricada con base de herrería PTR y acolchonado firme de alta densidad.",
+  "precio": 5500
+},
+{
+  "codigo": "ZAR-FTA-029",
+  "categoria": "Fisioterapia",
+  "imagen": "https://zarmexoficial.com/images/productos/1741914705.png",
+  "descripcion": "Mesa de exploración motorizada con sistema de elevación, estructura reforzada y acolchonado de alta densidad.",
+  "precio": 22500
+}
+]

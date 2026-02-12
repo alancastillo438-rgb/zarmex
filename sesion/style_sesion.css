@@ -1,0 +1,246 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background:
+        linear-gradient(
+            rgba(25, 199, 155, 0.35),
+            rgba(20, 20, 20, 0.85)
+        ),
+        url("https://www.zarmexoficial.com/imagenes/1742439791_Captura%20de%20pantalla%202025-01-19%20134751.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #B7E0C6, #B7E0C6);
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.logo img {
+    max-height: 75px;
+}
+
+nav a {
+    color: #070707;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #02644c;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO LOGIN */
+.login-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px;
+}
+
+/* LOGIN BOX (GLASS EFFECT) */
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 45px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    color: #fff;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* INPUTS */
+.inputBox {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 14px 45px;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.inputBox input:focus + label,
+.inputBox input:valid + label {
+    top: -8px;
+    left: 20px;
+    font-size: 0.8rem;
+    background: #B7E0C6;
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: #000;
+}
+
+.inputBox .icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #02644c;
+    font-size: 1.1rem;
+}
+
+/* BOTÓN */
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #B7E0C6, #02644c);
+    color: #000;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* REGISTRO */
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.register-link a {
+    color: #c9fff2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+.login-logo {
+    animation: float 3s ease-in-out infinite;
+}
+/* LOGO ANIMADO LOGIN */
+.login-logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.35));
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 15px;
+    }
+}
+/* ===== DROPDOWN SERVICIOS ===== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Contenido oculto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1f6f73;
+    min-width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    z-index: 999;
+}
+
+/* Links internos */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+/* Hover interno */
+.dropdown-content a:hover {
+    background-color: #159a9c;
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover del botón */
+.dropdown:hover .dropdown-btn {
+    color: #ffd700;
+}

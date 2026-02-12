@@ -1,0 +1,437 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #333;
+    line-height: 1.8;
+    padding-top: 130px;
+    background:
+        linear-gradient(
+            rgba(25, 199, 155, 0.308),
+            rgba(20, 20, 20, 0.85)
+        ),
+        url("https://www.zarmexoficial.com/imagenes/1742439791_Captura%20de%20pantalla%202025-01-19%20134751.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ================= TITULOS ================= */
+h1, h2, h3, h4 {
+    color: #151616;
+    text-align: center;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    background: #B7E0C6;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.logo img {
+    height: 65px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #070707;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #02644c;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: #02644c;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* BUSCADOR */
+.search-box {
+    display: flex;
+    background: white;
+    border-radius: 25px;
+    padding: 6px 12px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 160px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #02644c;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #02644c;
+    border-radius: 2px;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(135deg, #f0f1f159, #02644c59);
+    padding: 130px 20px;
+}
+
+.hero-box {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255,255,255,0.15);
+    padding: 55px;
+    border-radius: 25px;
+    color: white;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+.hero-box h1 {
+    font-size: 3rem;
+}
+
+.hero-box p {
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+
+/* ================= SECCIONES ================= */
+.section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 60px 25px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+.section p {
+    max-width: 950px;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+/* IMAGENES */
+.image-section img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* ================= MISION / VISION ================= */
+.purpose {
+    background: #B7E0C6;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    background: rgb(245, 244, 242);
+    color: #333;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(250, 249, 249, 0.98);
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+/* ================= VALORES ================= */
+.values {
+    background: #B7E0C6;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-card {
+    background: rgb(243, 243, 242);
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    transition: all .3s ease;
+}
+
+.value-card:hover {
+    transform: scale(1.06);
+}
+
+/* ================= FOOTER / CONTACTANOS ================= */
+.footer-zarmex {
+    background: #02644c;
+    color: white;
+    padding: 50px 20px 20px;
+    margin-top: 80px; /* agregado para alinearlo con otras secciones */
+    text-align: center;
+}
+
+.footer-contenido {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col h4 { 
+    margin-bottom: 15px; 
+    font-size: 1.2rem; 
+}
+
+.footer-col p { 
+    margin: 6px 0; 
+    font-size: 0.95rem; 
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 16px;
+}
+
+/* Estilo base */
+.redes-sociales a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+/* Facebook */
+.redes-sociales a.facebook {
+    background: #1877F2;
+}
+
+/* Instagram (gradiente oficial) */
+.redes-sociales a.instagram {
+    background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285AEB 90%);
+}
+
+/* TikTok */
+.redes-sociales a.tiktok {
+    background: #000000;
+}
+
+/* Hover */
+.redes-sociales a:hover {
+    transform: scale(1.15);
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.15);
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .hero-box h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #B7E0C6;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+/* ================= HERO CAROUSEL ================= */
+.hero-carousel { position:relative; height:90vh; overflow:hidden; }
+.carousel-slide {
+    position:absolute;
+    inset:0;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity:0;
+    transform:scale(1.1);
+    transition:opacity 1.2s ease-in-out, transform 6s ease;
+}
+
+
+.carousel-slide.active {
+    opacity:1;
+    transform:scale(1);
+}
+
+/* ===== FLECHAS AGREGADAS ===== */
+.carousel-arrow {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,0.55);
+    border:none;
+    color:white;
+    font-size:36px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    cursor:pointer;
+    z-index:50;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:background 0.3s ease, transform 0.2s ease;
+}
+.carousel-arrow:hover {
+    background:rgba(2,100,76,0.9);
+    transform:translateY(-50%) scale(1.1);
+}
+.prev { left:25px; }
+.next { right:25px; }
+
+/* DOTS */
+.carousel-dots {
+    position:absolute;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+    z-index:10;
+}
+.carousel-dots span {
+    width:12px;
+    height:12px;
+    background:rgba(255,255,255,0.6);
+    border-radius:50%;
+    cursor:pointer;
+}
+.carousel-dots span.active { background:#02644c; }
+@media (max-width: 768px) {
+    .hero-carousel {
+        height: 260px;
+    }
+}
+
